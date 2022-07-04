@@ -17,4 +17,9 @@ public class CourseController {
     public Long getTotalInstructorCourses(){
         return courseService.getTotalCoursesByInstructor(2);
     }
+
+    @GetMapping("/say-hello")
+    public String sayHello(){
+        return "Saying hello from spring boot";
+    }
 }
